@@ -1,5 +1,45 @@
-.h1 {
-    display: flex;
-    justify-content: center;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    height: 100vh;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.BMIform {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.formTitle {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.BMItable {
+    border: 1px solid black;
+}
+footer {
+    text-align: center;
+}

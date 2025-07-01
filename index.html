@@ -9,27 +9,28 @@
  <h1>CalculaIMC</h1>
 <h2>Saiba exatamente o seu IMC e acompanhe sua saúde!</h2>
 
-<form id="formularioIMC">
-  <label for="idade">Idade:</label>
-  <input type="number" id="idade" name="idade" required />
+<form class="BMIform">
+<p class="formTitle">Calculadora de IMC</p>
+  <label for="age">Idade:</label>
+  <input type="number" id="age" name="age" required />
 
-  <label for="peso">Peso (kg):</label>
-  <input type="number" step="0.1" id="peso" name="peso" required />
+  <label for="weight">Peso (kg):</label>
+  <input type="number" step="0.1" id="weight" name="weight" required />
 
-  <label for="altura">Altura (m):</label>
-  <input type="number" step="0.01" id="altura" name="altura" required />
+  <label for="height">Altura (m):</label>
+  <input type="number" step="0.01" id="height" name="height" required />
 
   <br /><br />
   
-    <p>Selecione seu sexo:</p>
+    <p id="genreSelect">Selecione seu sexo:</p>
 
   <label>
-    <input type="radio" name="sexo" value="masculino" />
+    <input type="radio" name="gender" value="male" />
     Masculino
   </label>
 
   <label>
-    <input type="radio" name="sexo" value="feminino" />
+    <input type="radio" name="gender" value="female" />
     Feminino
   </label>
   
@@ -37,13 +38,17 @@
 
   <button type="submit">Calcular</button>
   <button type="reset">Limpar</button>
-</form>
-
-    <section>
+  
+    <section class="result">
         <h3>Resultado</h3>
         <p>Seu IMC é 22.5 - Normal</p>
     </section>
     <section>
+        <p>Seu peso ideal para sua altura deveria ser:</p>
+    </section>
+</form>
+
+    <section class="BMItable">
         <table>
             <caption>Veja a Interpretação do IMC</caption>
             <thead>
@@ -82,16 +87,15 @@
             </tbody>
         </table>
     </section>
-    <section>
-        <p>Seu peso ideal para sua altura deveria ser:</p>
-    </section>
+
     <footer>
         <p>Esta calculadora é para fins informativos e não substitui orientação médica.</p>
-        <p>© 2025 Arthur Alexandre - Calculadora de IMC</p>
+        <p>© 2025 Arthur Alexandre - CalculaIMC</p>
         <a href="https://github.com/Arthur-Alexandre-Dev" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/arthur-alexandre-9118a1291/" target="_blank">Linkedin</a>
     </footer>
-    <script src="/IMC/imc.js"></script>
-    <style src="/IMC/style.css"></style>
+
+    <script src="/imc.js"></script>
+    <link rel="stylesheet" href="/style.css">
 </body>
 </html>

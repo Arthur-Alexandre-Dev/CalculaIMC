@@ -1,5 +1,4 @@
-function Imc(name, age, weight, height) {
-  this.name = name;
+function Imc(age, weight, height) {
   this.age = age;
   this.weight = weight;
   this.height = height;
@@ -10,6 +9,6 @@ function Imc(name, age, weight, height) {
 }
 
 (function p1() {
-  let p1 = new Imc("Arthur", 25, 80, 1.8);
+  let p1 = new Imc(25, 80, 1.8);
   console.log(p1.imc_calculator());
 })();

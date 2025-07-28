@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vitally</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
  <h1>Vitally</h1>
@@ -26,12 +27,14 @@
   <div class="genderButtonsBox">
     <input type="radio" name="gender" id="male" value="male" required />
     <label for="male" class="genderRadioBtn">
-      ♂ Masculino
+        <span class="maleGenderIcon">♂</span>
+        <span>Masculino</span>
     </label>
 
     <input type="radio" name="gender" id="female" value="female" />
     <label for="female" class="genderRadioBtn">
-      ♀ Feminino
+        <span class="femaleGenderIcon">♀</span>
+        <span>Feminino</span>
     </label>
   </div>
 </div>
@@ -89,12 +92,13 @@
 
     <footer>
         <p>Esta calculadora é para fins informativos e não substitui orientação médica.</p>
-        <p>© 2025 Arthur Alexandre - Vitally</p>
-        <a href="https://github.com/Arthur-Alexandre-Dev" target="_blank">GitHub</a> |
-        <a href="https://www.linkedin.com/in/arthur-alexandre-9118a1291/" target="_blank">Linkedin</a>
+        <p class="copyright">© 2025 Arthur Alexandre - Vitally</p>
+        <a href="https://github.com/Arthur-Alexandre-Dev" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/250px-GitHub_Invertocat_Logo.svg.png" alt="githubIcon" width="14" class="githubIcon">GitHub</a> <span>|</span>
+        <a href="https://www.linkedin.com/in/arthur-alexandre-9118a1291/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/800px-LinkedIn_icon.svg.png" alt="linkedinIcon" width="14" class="linkedinIcon">Linkedin</a>
     </footer>
 
     <script src="/imc.js"></script>
-    <link rel="stylesheet" href="/style.css">
 </body>
 </html>

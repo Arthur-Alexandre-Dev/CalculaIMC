@@ -106,6 +106,20 @@ input[type="number"]:focus {
   background: #edf6f9;
 }
 
+.maleGenderIcon {
+  font-size: 1.5rem;
+  color:  #3498db;
+  font-family: 'Segoe UI Symbol', 'Arial Black', sans-serif;
+  margin-right: 0.1rem;
+}
+
+.femaleGenderIcon {
+  font-size: 1.5rem;
+  color: #e91e63;
+  font-family: 'Segoe UI Symbol', 'Arial Black', sans-serif;
+  margin-right: 0.1rem;
+}
+
 input[type="radio"]:checked + .genderRadioBtn {
   border-color: #1d3557;
   background-color: #1d3557;
@@ -204,4 +218,17 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.copyright {
+  margin-bottom: 0.5rem;
+}
+
+.githubIcon {
+  margin-right: 0.2rem;
+  vertical-align: middle;
+}
+
+.linkedinIcon {
+  margin-right: 0.2rem;
+  vertical-align: middle;
 }

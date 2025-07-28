@@ -67,6 +67,11 @@ document.querySelector(".bmiForm").addEventListener("submit", function (e) {
     return;
   }
 
+  if (weight <= 0 || height <= 0 || weight === isNaN || height === isNaN) {
+    alert("Por favor, preencha a altura e o peso com valores válidos!")
+    return;
+  }
+
   const resultSection = document.querySelector(".result");
   resultSection.innerHTML = `
     <h3>Resultado</h3>
